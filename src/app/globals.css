@@ -1,26 +1,129 @@
-@import "tailwindcss";
+@import "tailwindcss" source(none);
+@import "tw-animate-css";
 
+/* Tell Tailwind exactly what to scan */
+@source "../**/*.{js,ts,jsx,tsx,mdx}";
+
+
+@custom-variant dark (&:is(.dark *));
+
+/* -----------------------------
+   Blue Byrd: Design Tokens
+   - Keep it lean
+   - Use RGB vars so Tailwind arbitrary values work nicely
+-------------------------------- */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Brand */
+  --brand-blue: 40 90 169;  /* #285aa9 */
+  --brand-yellow: 255 191 30; /* #ffbf1e */
+
+  /* Surface */
+  --bg: 240 240 240;   /* #f0f0f0 */
+  --fg: 10 26 51;      /* #0A1A33 */
+  --muted: 71 85 105;  /* slate-600-ish */
+  --card: 255 255 255;
+  --border: 226 232 240; /* slate-200 */
+  --ring: var(--brand-blue);
+
+  /* Radius */
+  --radius: 0.75rem;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.dark {
+  --bg: 2 6 23;        /* slate-950 */
+  --fg: 226 232 240;   /* slate-200 */
+  --muted: 148 163 184;/* slate-400 */
+  --card: 15 23 42;    /* slate-900 */
+  --border: 51 65 85;  /* slate-700 */
+  --ring: 93 200 227;  /* your bright “sky” accent in dark */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* -----------------------------
+   Base
+-------------------------------- */
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+  background: rgb(var(--bg));
+  color: rgb(var(--fg));
+}
+
+/* Optional: consistent heading vibe without hard-coding colors everywhere */
+h1, h2, h3 {
+  letter-spacing: -0.02em;
+}
+h2 { color: rgb(var(--brand-blue)); }
+.dark h2 { color: rgb(93 200 227); } /* #5DC8E3 */
+h3 { color: rgb(41 78 162); }
+.dark h3 { color: rgb(86 201 231); }
+
+/* -----------------------------
+   Animations (kept)
+-------------------------------- */
+@keyframes gradient-pan {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Lightweight “flight” gradient utility */
+.animate-gradient {
+  background: linear-gradient(
+    135deg,
+    rgb(var(--brand-blue)) 0%,
+    rgb(26 61 128) 20%,
+    rgb(10 26 51) 40%,
+    rgb(30 41 57) 60%,
+    rgb(26 61 128) 80%,
+    rgb(var(--brand-blue)) 100%
+  );
+  background-size: 400% 400%;
+  animation: gradient-pan 30s ease infinite;
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+  width: max-content;
+}
+
+/* -----------------------------
+   Minimal button helpers
+   (Keep if you like using .btn classes alongside Tailwind)
+-------------------------------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-primary {
+  background: rgb(var(--brand-blue));
+  color: white;
+  box-shadow: 0 4px 6px rgba(40, 90, 169, 0.2);
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(40, 90, 169, 0.3);
+}
+
+.btn-secondary {
+  background: rgb(var(--brand-yellow));
+  color: rgb(var(--fg));
+  box-shadow: 0 4px 6px rgba(255, 191, 30, 0.2);
+}
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(255, 191, 30, 0.3);
 }
