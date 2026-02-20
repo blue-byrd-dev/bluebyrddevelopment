@@ -1,5 +1,14 @@
 {
   "css.validate": false,
   "scss.validate": false,
-  "less.validate": false
+  "less.validate": false,
+  "cSpell.ignoreWords": [
+    "bblogo"
+  ],
+  "cSpell.words": [
+    "borntoridepleasantontx",
+    "cheerfulcalculations",
+    "favoriting",
+    "lede"
+  ]
 }
