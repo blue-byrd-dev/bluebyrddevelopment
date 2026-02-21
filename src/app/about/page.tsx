@@ -58,7 +58,7 @@ export default function AboutPage() {
 					<div className="mt-8 grid gap-6 md:grid-cols-3">
 						<Principle
 							title="Clarity"
-							body="Messaging and structure that make the next step obvious — for customers, partners, and donors."
+							body="Messaging and structure that make the next step obvious: for customers, partners, and donors."
 						/>
 						<Principle
 							title="Credibility"
@@ -98,7 +98,7 @@ export default function AboutPage() {
 						<Step
 							number="03"
 							title="Design for trust"
-							body="Clean presentation, consistent patterns, and a tone that matches the brand — confident, not loud."
+							body="Clean presentation, consistent patterns, and a tone that matches the brand. Confident, not loud."
 						/>
 						<Step
 							number="04"
@@ -108,7 +108,7 @@ export default function AboutPage() {
 						<Step
 							number="05"
 							title="Launch with a clear next layer"
-							body="You don’t just get a finished site — you get a forward path: what to refine, improve, or expand when ready."
+							body="You don’t just get a finished site. You get a forward path: what to refine, improve, or expand when ready."
 						/>
 					</div>
 				</section>
@@ -120,8 +120,8 @@ export default function AboutPage() {
 					</h2>
 
 					<p className="mt-3 max-w-3xl leading-relaxed text-[rgb(var(--muted))]">
-						I work best with clients who care about clarity and long-term value
-						— not trends. This includes nonprofits, startups, agencies, and
+						I work best with clients who care about clarity and long-term value,
+						not trends. This includes nonprofits, startups, agencies, and
 						small businesses that want a digital presence built to hold up as
 						they grow.
 					</p>

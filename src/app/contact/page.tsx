@@ -22,7 +22,7 @@ export default function ContactPage() {
 					</h1>
 					<p className="mt-4 text-lg leading-relaxed text-[rgb(var(--muted))]">
 						If you’re ready to move, book a short call. If you’re still shaping
-						scope, send the details — I’ll reply with a clear next step.
+						scope, send the details. I’ll reply with a clear next step.
 					</p>
 				</header>
 
