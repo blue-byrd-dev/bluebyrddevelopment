@@ -58,7 +58,7 @@ const Hero = () => {
 					{/* CTAs */}
 					<div className="flex flex-wrap justify-center gap-4">
 						<Link href="/contact" className="btn btn-primary">
-							Get in Touch
+							Start your project
 							<FaArrowRight className="ml-2" />
 						</Link>
 

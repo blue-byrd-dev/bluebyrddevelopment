@@ -306,7 +306,7 @@ export default function ContactForm({ onSuccess }: Props) {
 					</span>
 				) : (
 					<span className="inline-flex items-center justify-center gap-2">
-						Start a project
+						Start your project
 						<FaArrowRight className="h-4 w-4" />
 					</span>
 				)}

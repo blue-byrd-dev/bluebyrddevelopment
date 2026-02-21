@@ -45,7 +45,7 @@ export default function ContactPage() {
 									rel="noreferrer"
 									className="btn btn-primary mt-6"
 								>
-									Start a project →
+									Start your project →
 								</a>
 
 								<p className="mt-3 text-xs text-[rgb(var(--muted))]">

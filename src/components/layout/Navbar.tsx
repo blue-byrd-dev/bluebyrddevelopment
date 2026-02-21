@@ -150,7 +150,7 @@ export default function Navbar() {
 								boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
 							}}
 						>
-							Start a project
+							Start your project
 						</Link>
 
 						{/* Mobile hamburger */}

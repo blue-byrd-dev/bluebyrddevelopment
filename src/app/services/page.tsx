@@ -80,7 +80,7 @@ export default function ServicesPage() {
 					</p>
 
 					<div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-						<CTAButton href="/contact">Start a project</CTAButton>
+						<CTAButton href="/contact">Start your project</CTAButton>
 						<Link
 							href="/work"
 							className="text-sm underline underline-offset-4 hover:opacity-90"
@@ -250,7 +250,7 @@ export default function ServicesPage() {
 							built to evolve — let’s talk.
 						</p>
 						<div className="mt-7">
-							<CTAButton href="/contact">Start a project</CTAButton>
+							<CTAButton href="/contact">Start your project</CTAButton>
 						</div>
 				</section>
 			</main>

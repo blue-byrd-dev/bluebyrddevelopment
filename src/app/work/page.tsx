@@ -39,9 +39,6 @@ export default function WorkPage() {
 									<h2 className="text-xl font-semibold tracking-tight">
 										{p.name}
 									</h2>
-
-									{/* Optional: if you have a "type" or "industry" field in projects,
-                      swap this line to use it. Otherwise tags works fine. */}
 									<p className="mt-2 max-w-2xl leading-relaxed text-[rgb(var(--muted))]">
 										{p.summary}
 									</p>
@@ -83,7 +80,7 @@ export default function WorkPage() {
 					</p>
 
 					<div className="mt-6">
-						<CTAButton href="/contact">Start a project</CTAButton>
+						<CTAButton href="/contact">Start your project</CTAButton>
 					</div>
 				</section>
 			</div>
