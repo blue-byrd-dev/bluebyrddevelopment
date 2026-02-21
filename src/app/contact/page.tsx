@@ -12,7 +12,7 @@ const BOOKING_URL = "https://calendar.app.google/Z95Fd56AVePkEtEXA";
 export default function ContactPage() {
 	return (
 		<Container>
-			<main className="py-16">
+			<main className="py-25">
 				<header className="max-w-3xl">
 					<p className="text-sm uppercase tracking-wide text-[rgb(var(--muted))]">
 						Contact
