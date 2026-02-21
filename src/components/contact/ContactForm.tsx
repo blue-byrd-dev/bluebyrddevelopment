@@ -13,6 +13,7 @@ type FormDataState = {
 	budget: string;
 	timeframe: string;
 	message: string;
+	website: string;
 };
 
 type FormState = {
@@ -33,6 +34,7 @@ const initialData: FormDataState = {
 	budget: "",
 	timeframe: "",
 	message: "",
+	website: "",
 };
 
 export default function ContactForm({ onSuccess }: Props) {
@@ -170,6 +172,19 @@ export default function ContactForm({ onSuccess }: Props) {
 
 	return (
 		<form onSubmit={handleSubmit} className="space-y-5">
+			<div className="hidden" aria-hidden="true">
+				<label>
+					Website
+					<input
+						type="text"
+						name="website"
+						tabIndex={-1}
+						autoComplete="off"
+						value={formData.website}
+						onChange={handleChange}
+					/>
+				</label>
+			</div>
 			<div className="grid gap-4 sm:grid-cols-2">
 				<Field label="Full name">
 					<input
@@ -271,7 +286,7 @@ export default function ContactForm({ onSuccess }: Props) {
 					onChange={handleChange}
 					rows={6}
 					placeholder="What are you building? What’s not working today? What outcome do you want?"
-					className="mt-2 w-full rounded-xl border border-[rgb(var(--border))] bg-[rgb(var(--bbd-bg))] text-[rgb(var(--accent-fg))] px-4 py-3"
+					className="mt-2 w-full rounded-xl border border-[rgb(var(--border))] bg-[rgb(var(--bbd-bg))] text-[rgb(var(--bbd-fg))] px-4 py-3"
 				/>
 			</Field>
 

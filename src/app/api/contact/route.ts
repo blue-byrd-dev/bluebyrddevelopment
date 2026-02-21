@@ -1,3 +1,5 @@
+export const runtime = "nodejs";
+
 import nodemailer from "nodemailer";
 
 type ContactPayload = {
@@ -8,6 +10,7 @@ type ContactPayload = {
 	budget: string;
 	timeframe: string;
 	message: string;
+	website?: string;
 };
 
 function escapeHtml(input: string) {
@@ -123,6 +126,11 @@ ${message}
 export async function POST(req: Request) {
 	try {
 		const body = (await req.json()) as Partial<ContactPayload>;
+
+		// Honeypot: bots often fill this
+		if (requiredString(body.website)) {
+ 			return Response.json({ success: true });
+	}
 
 		// Required field validation
 		if (
