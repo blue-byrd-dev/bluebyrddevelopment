@@ -155,7 +155,7 @@ export default function AboutPage() {
 							Questions clients ask early
 						</h2>
 						<p className="mt-3 leading-relaxed text-[rgb(var(--muted))]">
-							These are the practical questions behind most projects — answered
+							These are the practical questions behind most projects, answered
 							in plain language.
 						</p>
 					</div>

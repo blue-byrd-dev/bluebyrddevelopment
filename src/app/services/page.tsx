@@ -117,7 +117,7 @@ export default function ServicesPage() {
 						</h2>
 						<p className="mt-3 leading-relaxed text-[rgb(var(--muted))]">
 							Every project includes structure, clean implementation, and a
-							clear next layer — not just a launch.
+							clear next layer, not just a launch.
 						</p>
 					</div>
 
@@ -247,7 +247,7 @@ export default function ServicesPage() {
 						</h2>
 						<p className="mt-3 max-w-3xl leading-relaxed text-[rgb(var(--muted))]">
 							If you want a site or platform that feels clear, credible, and
-							built to evolve — let’s talk.
+							built to evolve. Let’s talk.
 						</p>
 						<div className="mt-7">
 							<CTAButton href="/contact">Start your project</CTAButton>

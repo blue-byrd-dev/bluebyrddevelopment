@@ -18,7 +18,7 @@ export default function WorkPage() {
 
 					<p className="mt-4 text-lg leading-relaxed text-[rgb(var(--muted))]">
 						A selection of work where clarity, structure, and long-term thinking
-						shaped the outcome — not just the design.
+						shaped the outcome, not just the design.
 					</p>
 
 					<p className="mt-4 leading-relaxed text-[rgb(var(--muted))]">
@@ -76,7 +76,7 @@ export default function WorkPage() {
 					</h2>
 					<p className="mt-3 max-w-2xl leading-relaxed text-[rgb(var(--muted))]">
 						If you’re looking for a site or platform that feels clear, credible,
-						and built to evolve — let’s talk.
+						and built to evolve. Let’s talk.
 					</p>
 
 					<div className="mt-6">
