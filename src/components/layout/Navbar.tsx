@@ -5,14 +5,7 @@ import { useEffect, useMemo, useState } from "react";
 import { usePathname } from "next/navigation";
 import Container from "../ui/Container";
 import ThemeToggle from "../ui/ThemeToggle";
-
-const nav = [
-	{ href: "/services", label: "Services" },
-	{ href: "/work", label: "Work" },
-	{ href: "/process", label: "Process" },
-	{ href: "/about", label: "About" },
-	{ href: "/contact", label: "Contact" },
-];
+import { navItems } from "@/components/nav/NavItems";
 
 export default function Navbar() {
 	const pathname = usePathname();
@@ -121,7 +114,7 @@ export default function Navbar() {
 
 					{/* Desktop nav */}
 					<nav className="hidden items-center gap-6 md:flex">
-						{nav.map((item) => (
+						{navItems.map((item) => (
 							<Link
 								key={item.href}
 								href={item.href}
@@ -209,7 +202,7 @@ export default function Navbar() {
 						<Container>
 							<div className="py-4">
 								<nav className="grid gap-2">
-									{nav.map((item) => (
+									{navItems.map((item) => (
 										<Link
 											key={item.href}
 											href={item.href}

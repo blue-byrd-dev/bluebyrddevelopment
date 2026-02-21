@@ -1,5 +1,6 @@
-import Link from "next/link";
+// import Link from "next/link";
 import Container from "../ui/Container";
+import FooterNav from "@/components/layout/FooterNav";
 
 export default function Footer() {
 	return (
@@ -22,34 +23,8 @@ export default function Footer() {
 								<p>Boutique solo studio.</p>
 							</div>
 						</div>
-
-						{/* Optional quick links (helps on mobile + SEO) */}
-						<nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
-							<Link
-								href="/services"
-								className="text-[rgb(var(--muted))] hover:text-[rgb(var(--fg))]"
-							>
-								Services
-							</Link>
-							<Link
-								href="/work"
-								className="text-[rgb(var(--muted))] hover:text-[rgb(var(--fg))]"
-							>
-								Work
-							</Link>
-							<Link
-								href="/about"
-								className="text-[rgb(var(--muted))] hover:text-[rgb(var(--fg))]"
-							>
-								About
-							</Link>
-							<Link
-								href="/contact"
-								className="text-[rgb(var(--muted))] hover:text-[rgb(var(--fg))]"
-							>
-								Contact
-							</Link>
-						</nav>
+						{/* Mobile footer nav (appears only at bottom) */}
+						<FooterNav />
 					</div>
 
 					{/* Bottom line */}

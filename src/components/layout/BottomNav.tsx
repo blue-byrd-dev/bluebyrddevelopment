@@ -2,13 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
-const items = [
-	{ href: "/", label: "Home" },
-	{ href: "/services", label: "Services" },
-	{ href: "/work", label: "Work" },
-	{ href: "/contact", label: "Contact" },
-];
+import { navItems } from "@/components/nav/NavItems";
 
 export default function BottomNav() {
 	const pathname = usePathname();
@@ -29,7 +23,7 @@ export default function BottomNav() {
 			aria-label="Bottom navigation"
 		>
 			<div className="mx-auto flex max-w-4xl items-center justify-around px-4 py-3">
-				{items.map((item) => (
+				{navItems.map((item) => (
 					<Link
 						key={item.href}
 						href={item.href}
