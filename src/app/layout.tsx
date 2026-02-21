@@ -1,7 +1,8 @@
 import "./globals.css";
-import ThemeProvider from "@/components/ThemeProvider";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import ThemeProvider from "@/components/provider/ThemeProvider";
+import ToastProvider from "@/components/provider/ToastProvider";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 
 export const metadata = {
 	title: "Blue Byrd Development",
@@ -18,6 +19,7 @@ export default function RootLayout({
 		<html lang="en" suppressHydrationWarning>
 			<body>
 				<ThemeProvider>
+					<ToastProvider />
 					<Navbar />
 					<main className="min-h-[70vh]">{children}</main>
 					<Footer />

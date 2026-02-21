@@ -1,7 +1,7 @@
-import Hero from "@/components/Hero";
+import Hero from "@/components/sections/Hero";
 import SectionBridge from "@/components/ui/SectionBridge";
-import WhatWeDo from "@/components/WhatWeDo";
-import ProofSection from "@/components/ProofSection";
+import WhatWeDo from "@/components/sections/WhatWeDo";
+import ProofSection from "@/components/sections/ProofSection";
 
 export default function HomePage() {
 	return (

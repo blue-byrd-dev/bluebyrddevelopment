@@ -1,12 +1,12 @@
-import Container from "@/components/Container";
-import CTAButton from "@/components/CTAButton";
+import Container from "@/components/ui/Container";
+import CTAButton from "@/components/ui/CTAButton";
 import Link from "next/link";
 import { projects } from "@/lib/projects";
 
 export default function WorkPage() {
 	return (
 		<Container>
-			<div className="py-16">
+			<div className="py-25">
 				<header className="max-w-3xl">
 					<p className="text-sm uppercase tracking-wide text-[rgb(var(--muted))]">
 						Work & Case Studies
@@ -27,7 +27,8 @@ export default function WorkPage() {
 					</p>
 				</header>
 
-				<section className="mt-12 space-y-6">
+				<section className="mt-12 space-y-6 border-t border-[rgb(var(--border))] pt-14">
+					{" "}
 					{projects.map((p) => (
 						<article
 							key={p.slug}
@@ -72,7 +73,7 @@ export default function WorkPage() {
 					))}
 				</section>
 
-				<section className="mt-14 rounded-2xl border border-[rgb(var(--border))] bg-[rgb(var(--card))] p-8">
+				<section className="mt-14 border-t border-[rgb(var(--border))] pt-14">
 					<h2 className="text-xl font-semibold tracking-tight">
 						Ready to build something with structure?
 					</h2>

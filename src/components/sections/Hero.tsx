@@ -1,5 +1,6 @@
-import FadeInSection from "./ui/FadeInSection";
+import FadeInSection from "@/components/ui/FadeInSection";
 import { FaArrowRight } from "react-icons/fa";
+import Link from "next/link";
 
 const Hero = () => {
 	return (
@@ -56,14 +57,14 @@ const Hero = () => {
 
 					{/* CTAs */}
 					<div className="flex flex-wrap justify-center gap-4">
-						<a href="#send-signal" className="btn btn-primary">
+						<Link href="/contact" className="btn btn-primary">
 							Get in Touch
 							<FaArrowRight className="ml-2" />
-						</a>
+						</Link>
 
-						<a href="#sites-that-soar" className="btn btn-outline">
+						<Link href="/work" className="btn btn-outline">
 							View Our Work
-						</a>
+						</Link>
 					</div>
 				</div>
 			</FadeInSection>

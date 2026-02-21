@@ -1,4 +1,4 @@
-import FadeInSection from "./ui/FadeInSection";
+import FadeInSection from "@/components/ui/FadeInSection";
 
 const cards = [
 	{ title: "Performance", desc: "Fast loads, clean code, smart structure." },

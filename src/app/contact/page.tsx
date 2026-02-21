@@ -1,124 +1,152 @@
-"use client";
+import Container from "@/components/ui/Container";
+import ContactForm from "@/components/contact/ContactForm";
 
-import { useState } from "react";
-import Container from "@/components/Container";
+export const metadata = {
+	title: "Contact | Blue Byrd Development",
+	description:
+		"Book a call or send project details. Blue Byrd Development builds clear, scalable web foundations.",
+};
+
+const BOOKING_URL = "https://calendar.app.google/Z95Fd56AVePkEtEXA";
 
 export default function ContactPage() {
-	const [status, setStatus] = useState<
-		"idle" | "loading" | "success" | "error"
-	>("idle");
-	const [error, setError] = useState<string>("");
-
-	async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
-		e.preventDefault();
-		setStatus("loading");
-		setError("");
-
-		const fd = new FormData(e.currentTarget);
-		const payload = Object.fromEntries(fd.entries());
-
-		const res = await fetch("/api/lead", {
-			method: "POST",
-			headers: { "Content-Type": "application/json" },
-			body: JSON.stringify(payload),
-		});
-
-		const data = await res.json().catch(() => ({}));
-
-		if (res.ok && data?.ok) {
-			setStatus("success");
-			(e.target as HTMLFormElement).reset();
-			return;
-		}
-
-		setStatus("error");
-		setError(data?.error || "Something went wrong.");
-	}
-
 	return (
 		<Container>
-			<div className="py-14">
-				<h1 className="text-3xl font-bold">Contact</h1>
-				<p className="mt-3 max-w-2xl text-[rgb(var(--muted))]">
-					Tell me what you’re building, your timeline, and what “success” looks
-					like.
-				</p>
+			<main className="py-16">
+				<header className="max-w-3xl">
+					<p className="text-sm uppercase tracking-wide text-[rgb(var(--muted))]">
+						Contact
+					</p>
+					<h1 className="mt-3 text-4xl font-semibold tracking-tight">
+						Start with clarity.
+					</h1>
+					<p className="mt-4 text-lg leading-relaxed text-[rgb(var(--muted))]">
+						If you’re ready to move, book a short call. If you’re still shaping
+						scope, send the details — I’ll reply with a clear next step.
+					</p>
+				</header>
 
-				<form onSubmit={onSubmit} className="mt-10 max-w-2xl space-y-4">
-					{/* Honeypot (hidden) */}
-					<input
-						type="text"
-						name="honey"
-						className="hidden"
-						tabIndex={-1}
-						autoComplete="off"
-					/>
+				<section className="mt-14 border-t border-[rgb(var(--border))] pt-14">
+					<div className="grid gap-8 lg:grid-cols-2 lg:items-start">
+						{/* Left: booking + contact details */}
+						<div className="space-y-6">
+							<div className="rounded-2xl border border-[rgb(var(--border))] bg-[rgb(var(--card))] p-8">
+								<h2 className="text-2xl font-semibold tracking-tight">
+									Book a call
+								</h2>
+								<p className="mt-3 leading-relaxed text-[rgb(var(--muted))]">
+									15–20 minutes. We’ll clarify the goal, what’s needed, and the
+									best path forward.
+								</p>
 
-					<div className="grid gap-4 sm:grid-cols-2">
-						<div>
-							<label className="text-sm font-semibold">Name*</label>
-							<input
-								name="name"
-								required
-								className="mt-1 w-full rounded-xl border border-[rgb(var(--border))] bg-[rgb(var(--card))] px-4 py-3"
-							/>
+								<a
+									href={BOOKING_URL}
+									target="_blank"
+									rel="noreferrer"
+									className="btn btn-primary mt-6"
+								>
+									Start a project →
+								</a>
+
+								<p className="mt-3 text-xs text-[rgb(var(--muted))]">
+									Prefer email first? Use the message form.
+								</p>
+							</div>
+
+							<div className="rounded-2xl border border-[rgb(var(--border))] bg-[rgb(var(--card))] p-8">
+								<h2 className="text-xl font-semibold tracking-tight">
+									Contact details
+								</h2>
+
+								<div className="mt-4 space-y-3 text-sm text-[rgb(var(--muted))]">
+									<p>
+										<span className="font-semibold text-[rgb(var(--fg))]">
+											Phone:
+										</span>{" "}
+										<a
+											className="underline underline-offset-4 hover:opacity-90"
+											href="tel:+18302821648"
+										>
+											(+1) 830-282-1648
+										</a>
+									</p>
+									<p>
+										<span className="font-semibold text-[rgb(var(--fg))]">
+											Email:
+										</span>{" "}
+										<a
+											className="underline underline-offset-4 hover:opacity-90"
+											href="mailto:k.byrd@bluebyrddevelopment.com"
+										>
+											k.byrd@bluebyrddevelopment.com
+										</a>
+									</p>
+									<p>
+										<span className="font-semibold text-[rgb(var(--fg))]">
+											Location:
+										</span>{" "}
+										United States (remote)
+									</p>
+								</div>
+
+								<div className="mt-6 flex flex-wrap gap-3 text-sm">
+									<a
+										href="https://www.linkedin.com/company/blue-byrd-development/"
+										target="_blank"
+										rel="noreferrer"
+										className="btn btn-outline"
+									>
+										LinkedIn
+									</a>
+									<a
+										href="https://bsky.app/profile/bluebyrddevelopment.com"
+										target="_blank"
+										rel="noreferrer"
+										className="btn btn-outline"
+									>
+										Bluesky
+									</a>
+									<a
+										href="https://www.facebook.com/bluebyrddevelopment/"
+										target="_blank"
+										rel="noreferrer"
+										className="btn btn-outline"
+									>
+										Facebook
+									</a>
+								</div>
+							</div>
 						</div>
-						<div>
-							<label className="text-sm font-semibold">Email*</label>
-							<input
-								name="email"
-								type="email"
-								required
-								className="mt-1 w-full rounded-xl border border-[rgb(var(--border))] bg-[rgb(var(--card))] px-4 py-3"
-							/>
+
+						{/* Right: form */}
+						<div className="rounded-2xl border border-[rgb(var(--border))] bg-[rgb(var(--card))] p-8">
+							<h2 className="text-2xl font-semibold tracking-tight">
+								Send project details
+							</h2>
+							<p className="mt-3 leading-relaxed text-[rgb(var(--muted))]">
+								The more context you share, the more useful my response will be.
+							</p>
+
+							<div className="mt-6">
+								<ContactForm />
+							</div>
 						</div>
 					</div>
+				</section>
 
-					<div className="grid gap-4 sm:grid-cols-2">
-						<div>
-							<label className="text-sm font-semibold">Company</label>
-							<input
-								name="company"
-								className="mt-1 w-full rounded-xl border border-[rgb(var(--border))] bg-[rgb(var(--card))] px-4 py-3"
-							/>
-						</div>
-						<div>
-							<label className="text-sm font-semibold">Website</label>
-							<input
-								name="website"
-								className="mt-1 w-full rounded-xl border border-[rgb(var(--border))] bg-[rgb(var(--card))] px-4 py-3"
-							/>
-						</div>
-					</div>
-
-					<div>
-						<label className="text-sm font-semibold">Message*</label>
-						<textarea
-							name="message"
-							required
-							rows={6}
-							className="mt-1 w-full rounded-xl border border-[rgb(var(--border))] bg-[rgb(var(--card))] px-4 py-3"
-						/>
-					</div>
-
-					<button
-						type="submit"
-						disabled={status === "loading"}
-						className="inline-flex rounded-xl bg-[rgb(var(--accent))] px-6 py-3 text-sm font-semibold text-black hover:opacity-90 disabled:opacity-60"
-					>
-						{status === "loading" ? "Sending..." : "Send Message"}
-					</button>
-
-					{status === "success" && (
-						<p className="text-sm font-semibold text-[rgb(var(--accent2))]">
-							Sent. You’ll hear back soon.
+				<section className="mt-14 border-t border-[rgb(var(--border))] pt-14">
+					<div className="max-w-3xl">
+						<h2 className="text-2xl font-semibold tracking-tight">
+							What happens next
+						</h2>
+						<p className="mt-3 max-w-3xl leading-relaxed text-[rgb(var(--muted))]">
+							If you book a call, you’ll get clarity fast: scope, priorities,
+							and a recommended path forward. If you send a message, I’ll reply
+							with next steps and a few questions to tighten the plan.
 						</p>
-					)}
-					{status === "error" && (
-						<p className="text-sm font-semibold text-red-500">{error}</p>
-					)}
-				</form>
-			</div>
+					</div>
+				</section>
+			</main>
 		</Container>
 	);
 }

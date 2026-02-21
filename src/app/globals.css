@@ -13,17 +13,18 @@
   /* Brand constants */
   --bbd-primary: #2c59a9;
   --bbd-secondary: #57c9e6;
-  --bbd-accent: #F4B942;
-  --bbd-accent-fg: #0d152a;
   --bbd-navy: #0d152a;
   --bbd-text-dark: #ceecf3;
 
   /* LIGHT default */
   --bbd-bg: #ffffff;
   --bbd-fg: #0d152a;
+  --bbd-accent: #F4B942;
+  --bbd-accent-fg: #0d152a;
   --bbd-muted: rgba(13, 21, 42, 0.72);
   --bbd-border: rgba(13, 21, 42, 0.12);
   --bbd-card: #f6fbfe;
+  --btn-shadow: 0, 10px, 24px rgba(0, 0, 0, 0.25);
 }
 
 .dark {
@@ -32,16 +33,14 @@
   --bbd-muted: rgba(206, 236, 243, 0.82);
   --bbd-border: rgba(206, 236, 243, 0.18);
   --bbd-card: rgba(206, 236, 243, 0.06);
-
-  /* Accent can stay same */
   --bbd-accent: #F4B942;
   --bbd-accent-fg: #0d152a;
+  --btn-shadow: 0 10px 24px rgba(206, 236, 243, 0.25);
 
   /* Hero background (DARK) */
   --bbd-hero-from: #1a2a4f;
   --bbd-hero-to: #0d152a;
 }
-
 
 /* -----------------------------
    Base
@@ -93,7 +92,6 @@ h1, h2, h3 {
   filter: brightness(1.03);
 }
 
-/* Outline CTA */
 /* Outline CTA — theme-aware and accessible */
 .btn-outline {
   background-color: transparent;
@@ -117,6 +115,10 @@ h1, h2, h3 {
 .dark .btn-outline:hover {
   background-color: rgba(206, 236, 243, 0.08);
   border-color: rgba(206, 236, 243, 0.65);
+}
+
+.dark .btn-primary {
+  box-shadow: var(--btn-shadow)
 }
 
 /* Accessibility: keyboard focus */

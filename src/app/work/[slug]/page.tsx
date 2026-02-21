@@ -1,5 +1,5 @@
-import Container from "@/components/Container";
-import CTAButton from "@/components/CTAButton";
+import Container from "@/components/ui/Container";
+import CTAButton from "@/components/ui/CTAButton";
 import { getProject, projects } from "@/lib/projects";
 import { notFound } from "next/navigation";
 
