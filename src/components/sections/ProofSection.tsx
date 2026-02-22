@@ -59,7 +59,7 @@ export default function ProofSection() {
 					</h2>
 
 					<p className="text-lg sm:text-xl max-w-2xl mx-auto opacity-80">
-						Explore a few projects to see the work in action — and the thinking
+						Explore a few projects to see the work in action and the thinking
 						behind it.
 					</p>
 				</div>

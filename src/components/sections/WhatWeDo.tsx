@@ -20,7 +20,7 @@ const WhatWeDo = () => {
 					</h2>
 
 					<p className="text-lg sm:text-xl max-w-2xl mx-auto opacity-80">
-						We design and engineer performance-first websites that load fast,
+						I design and engineer performance-first websites that load fast,
 						look sharp, and guide users to take action.
 					</p>
 
