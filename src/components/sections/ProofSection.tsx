@@ -39,7 +39,7 @@ const proof = [
 			"Scalable foundation",
 			"In progress toward full usability",
 		],
-		liveUrl: "https://klb-dev.github.io/foreverHome/",
+		liveUrl: "https://foreverhome-pets.com",
 		liveLabel: "View MVP Preview",
 		caseStudyHref: "/work/forever-home",
 	},
