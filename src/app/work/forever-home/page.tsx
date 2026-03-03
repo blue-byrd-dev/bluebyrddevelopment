@@ -46,7 +46,7 @@ export default function ForeverHomePage() {
 					<div className="space-y-1">
 						<p className="text-sm text-[rgb(var(--muted))]">Live site</p>
 						<p className="text-[rgb(var(--muted))]">
-							Private / in active development
+							Teaser / in active development
 						</p>
 					</div>
 
