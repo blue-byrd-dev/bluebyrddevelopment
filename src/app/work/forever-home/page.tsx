@@ -47,14 +47,16 @@ export default function ForeverHomePage() {
 						<p className="text-sm text-[rgb(var(--muted))]">Live site</p>
 						<p className="text-[rgb(var(--muted))]">
 							Teaser / in active development
-							<a
-								href="https://foreverhome-pets.com"
-								target="_blank"
-								rel="noreferrer"
-								className="underline underline-offset-4"
-							>
-								foreverhome-pets.com
-							</a>
+							<p>
+								<a
+									href="https://foreverhome-pets.com"
+									target="_blank"
+									rel="noreferrer"
+									className="underline underline-offset-4"
+								>
+									foreverhome-pets.com
+								</a>
+							</p>
 						</p>
 					</div>
 
