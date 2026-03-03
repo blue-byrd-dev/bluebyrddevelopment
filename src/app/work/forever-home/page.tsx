@@ -23,7 +23,7 @@ export default function ForeverHomePage() {
 			<CaseStudyHeader
 				kicker="Product MVP · Adoption Platform"
 				title="Forever Home"
-				lede="Architecting an MVP adoption platform with a scalable foundation — designed to support authentication, personalization, and future shelter engagement without turning into a spaghetti product later."
+				lede="Architecting an MVP adoption platform with a scalable foundation. Designed to support authentication, personalization, and future shelter engagement without turning into a spaghetti product later."
 			/>
 
 			<SnapshotCard
@@ -85,7 +85,7 @@ export default function ForeverHomePage() {
 
 				<CaseStudySection title="The Approach">
 					<p>
-						The approach prioritized product structure first — then
+						The approach prioritized product structure first, then
 						implementation.
 					</p>
 					<CaseStudyList
@@ -97,7 +97,7 @@ export default function ForeverHomePage() {
 						]}
 					/>
 					<p className="mt-4">
-						The goal was a foundation that stays coherent as features expand.
+						The goal is a foundation that stays coherent as features expand.
 					</p>
 				</CaseStudySection>
 
@@ -117,7 +117,7 @@ export default function ForeverHomePage() {
 
 				<CaseStudySection title="Next Steps">
 					<p>
-						The platform can evolve depending on the business goal: engagement,
+						The platform will evolve depending on the business goal: engagement,
 						retention, or shelter integration.
 					</p>
 					<CaseStudyList

@@ -107,7 +107,7 @@ export default function BtrPage() {
 				<CaseStudySection title="The Result" highlight>
 					<p>
 						Born To Ride now presents as an organization with direction and
-						longevity — not just activity.
+						longevity, not just activity.
 					</p>
 					<CaseStudyList
 						items={[

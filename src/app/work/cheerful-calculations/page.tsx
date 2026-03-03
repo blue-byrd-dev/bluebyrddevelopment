@@ -23,7 +23,7 @@ export default function C2Page() {
 			<CaseStudyHeader
 				kicker="Service Brand · Bookkeeping"
 				title="Cheerful Calculations"
-				lede="Transforming a service-based bookkeeping brand into a clear, trust-driven positioning system designed to attract remote clients — with an emphasis on restaurants and operationally complex small businesses."
+				lede="Transforming a service-based bookkeeping brand into a clear, trust-driven positioning system designed to attract remote clients with an emphasis on restaurants and operationally complex small businesses."
 			/>
 
 			<SnapshotCard
@@ -74,13 +74,13 @@ export default function C2Page() {
 			<div className="mt-6 divide-y divide-[rgb(var(--border))]">
 				<CaseStudySection title="The Problem">
 					<p>
-						The service was strong — but the presentation didn’t do it justice.
+						The service is strong, but the presentation didn’t do it justice.
 						The brand needed to feel established, confident, and easy to trust
 						in the first 15 seconds.
 					</p>
 					<CaseStudyList
 						items={[
-							"Messaging was too general, which made differentiation harder — especially for restaurant bookkeeping.",
+							"Messaging was too general, which made differentiation harder, especially for restaurant bookkeeping.",
 							"The site didn’t guide prospects through a clear decision path.",
 							"The structure didn’t scale well for future service expansion, content, or proof.",
 						]}
@@ -101,7 +101,7 @@ export default function C2Page() {
 							"Refined positioning to speak directly to restaurant operations: sales, vendors, payroll, tips, and fluctuating costs.",
 							"Built a clean narrative flow: what you do → who it’s for → why it works → what happens next.",
 							"Designed the structure to support future proof (testimonials, mini case examples, before/after cleanups) without rewriting the site.",
-							"Kept the tone calm and professional — confident without pressure.",
+							"Kept the tone calm and professional, confident without pressure.",
 						]}
 					/>
 				</CaseStudySection>
@@ -109,7 +109,7 @@ export default function C2Page() {
 				<CaseStudySection title="The Result" highlight>
 					<p>
 						Cheerful Calculations now presents as a stable, trustworthy service
-						built for business owners who want clarity — not chaos.
+						built for business owners who want clarity, not chaos.
 					</p>
 					<CaseStudyList
 						items={[
