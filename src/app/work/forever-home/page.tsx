@@ -12,7 +12,7 @@ import {
 export const metadata = {
 	title: "Forever Home Case Study | Blue Byrd Development",
 	description:
-		"A case study on architecting a scalable MVP adoption platform with clear product structure and long-term growth considerations.",
+		"Explore the Forever Home case study, a scalable pet adoption platform MVP designed with clear product structure, modern UX, and room for future growth.",
 };
 
 export default function ForeverHomePage() {

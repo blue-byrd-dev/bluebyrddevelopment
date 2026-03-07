@@ -6,9 +6,9 @@ import FrequentlyAskedQuestions from "@/components/ui/FrequentlyAskedQuestions";
 import Principle from "@/components/ui/Principle";
 
 export const metadata = {
-	title: "About | Blue Byrd Development",
+	title: "About Blue Byrd Development | Web Development for Small Business",
 	description:
-		"Blue Byrd Development builds clear, scalable digital systems with calm strategy and long-term structure, not just design.",
+		"Learn about Blue Byrd Development, a boutique web development studio building modern websites and digital platforms for small businesses, nonprofits, and growing brands.",
 };
 
 export default function AboutPage() {

@@ -6,9 +6,9 @@ import FrequentlyAskedQuestions from "@/components/ui/FrequentlyAskedQuestions";
 import Principle from "@/components/ui/Principle";
 
 export const metadata = {
-	title: "Process | Blue Byrd Development",
+	title: "Our Process | Blue Byrd Development",
 	description:
-		"A clear, structured process for building websites and platforms that stay coherent as you grow.",
+		"See the Blue Byrd Development process for planning, designing, and building modern websites and digital platforms with clear strategy and scalable structure.",
 };
 
 export default function ProcessPage() {

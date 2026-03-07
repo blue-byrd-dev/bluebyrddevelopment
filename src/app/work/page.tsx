@@ -3,6 +3,12 @@ import CTAButton from "@/components/ui/CTAButton";
 import Link from "next/link";
 import { projects } from "@/lib/projects";
 
+export const metadata = {
+	title: "Our Work | Blue Byrd Development",
+	description:
+		"Explore case studies from Blue Byrd Development, including websites and digital products built for nonprofits, service businesses, and mission-driven brands.",
+};
+
 export default function WorkPage() {
 	return (
 		<Container>

@@ -12,7 +12,7 @@ import {
 export const metadata = {
 	title: "Cheerful Calculations Case Study | Blue Byrd Development",
 	description:
-		"A case study on transforming a bookkeeping brand into a trust-driven positioning system designed to attract remote clients.",
+		"A case study on building a clear, modern website for a bookkeeping business to improve trust, communicate services, and support long-term growth.",
 };
 
 export default function C2Page() {

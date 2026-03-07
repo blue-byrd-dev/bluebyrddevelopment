@@ -12,7 +12,7 @@ import {
 export const metadata = {
 	title: "Born To Ride Case Study | Blue Byrd Development",
 	description:
-		"A case study on repositioning a grassroots nonprofit into a scalable digital presence designed for sponsorship and community growth.",
+		"See how Blue Byrd Development helped reposition Born To Ride with a modern nonprofit website strategy built for sponsorship visibility, credibility, and community growth.",
 };
 
 export default function BtrPage() {

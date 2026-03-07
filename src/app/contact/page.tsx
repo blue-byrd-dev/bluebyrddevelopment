@@ -2,9 +2,9 @@ import Container from "@/components/ui/Container";
 import ContactForm from "@/components/contact/ContactForm";
 
 export const metadata = {
-	title: "Contact | Blue Byrd Development",
+	title: "Contact Blue Byrd Development | Start Your Project",
 	description:
-		"Book a call or send project details. Blue Byrd Development builds clear, scalable web foundations.",
+		"Book a call or send project details. Blue Byrd Development builds modern websites and scalable digital platforms for small businesses and nonprofits.",
 };
 
 const BOOKING_URL = "https://calendar.app.google/Z95Fd56AVePkEtEXA";

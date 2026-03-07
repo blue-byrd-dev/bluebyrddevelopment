@@ -4,9 +4,9 @@ import FrequentlyAskedQuestions from "@/components/ui/FrequentlyAskedQuestions";
 import Link from "next/link";
 
 export const metadata = {
-	title: "Services | Blue Byrd Development",
+	title: "Web Development Services | Blue Byrd Development",
 	description:
-		"Websites and platforms built with clear structure, calm strategy, and foundations designed to scale.",
+		"Explore Blue Byrd Development services, including custom website design, web development, and scalable digital solutions for small businesses, nonprofits, and startups.",
 };
 
 const services = [
