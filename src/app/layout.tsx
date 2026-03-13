@@ -6,7 +6,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-	metadataBase: new URL("https://bluebyrddevelopment.com"),
+	metadataBase: new URL("https://www.bluebyrddevelopment.com"),
 	title: {
 		default: "Blue Byrd Development",
 		template: "%s",
