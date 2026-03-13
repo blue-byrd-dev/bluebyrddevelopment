@@ -221,7 +221,7 @@ export default function ContactForm({ onSuccess }: Props) {
 					required
 					value={formData.phone}
 					onChange={handleChange}
-					placeholder="+1 123-456-7890"
+					placeholder="+1 123 456 7890"
 					className="mt-2 w-full rounded-xl border border-[rgb(var(--border))] bg-[rgb(var(--bbd-bg))] text-[rgb(var(--fg))] px-4 py-3"
 				/>
 			</Field>
