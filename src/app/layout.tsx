@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 		title: "Blue Byrd Development",
 		description:
 			"Boutique solo dev studio building modern websites and digital platforms for nonprofits, startups, agencies, and small businesses.",
-		url: "https://bluebyrddevelopment.com",
+		url: "https://www.bluebyrddevelopment.com",
 		siteName: "Blue Byrd Development",
 		images: [
 			{

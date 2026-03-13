@@ -68,7 +68,7 @@ export default function ContactPage() {
 											href="tel:+18302821648"
 											aria-label="Call Blue Byrd Development"
 										>
-											830<span className="hidden">-</span>282-1648
+											+1 830 282 1648
 										</a>
 									</p>
 									<p>
