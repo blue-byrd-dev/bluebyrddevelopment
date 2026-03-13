@@ -61,13 +61,14 @@ export default function ContactPage() {
 								<div className="mt-4 space-y-3 text-sm text-[rgb(var(--muted))]">
 									<p>
 										<span className="font-semibold text-[rgb(var(--fg))]">
-											Phone:
+											Prefer to talk?
 										</span>{" "}
 										<a
 											className="underline underline-offset-4 hover:opacity-90"
 											href="tel:+18302821648"
+											aria-label="Call Blue Byrd Development"
 										>
-											(+1) 830-282-1648
+											830<span className="hidden">-</span>282-1648
 										</a>
 									</p>
 									<p>
